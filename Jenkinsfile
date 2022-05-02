@@ -5,9 +5,6 @@ pipeline {
         maven '3.8.5'
     }
     
-    parameters {
-        string(name: 'SERVER_IP', defaultValue: '127.0.0.1', description: 'Provide production server IP Address.')
-    }
 
     stages {
         stage('Source') {
